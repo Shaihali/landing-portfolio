@@ -1,0 +1,390 @@
+body {width: 100%; margin: 0; padding: 0;}
+header {width: 100%;}
+main {width: 100%;}
+
+.hide {
+    display: none!important;
+}
+.flex {
+    display: flex!important;
+}
+
+          /*Стилизация основного (main)блока сайта Ver.мобилки
+/*Первый раздел Ver.мобилки*/
+.main_cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 81px;
+}
+.main_cover_items {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 37px;
+    min-width: 317px;
+}
+.main_cover_items_text h1 {
+    font-family: Gilroy-Bold;
+    font-size: 47px;
+    line-height: 58px;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 23px;
+}
+.main_cover_items p {
+    font-family: gilroy-medium;
+    font-size: 18px;
+    line-height: 22px;
+    color: #090909;
+    margin: 0;
+}
+.main_cover_items button hr {
+    margin: 3.84px 0;
+}
+.main_cover_items button {
+    background-color: #fff;
+    border: 0;
+    padding: 0;
+}
+/*Конец первого раздела Ver.мобилки*/
+
+/*Общие Ver.мобилки*/
+.about_me, .portfolio {
+    background-color: #F6F6F6;
+    padding-right: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+h2 {
+    font-family: gilroy-bold;
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.skills, .portfolio, .contacts, .about_me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 81px;
+    padding-bottom: 86px;
+}
+.list_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 79.5px;
+}
+/*end*/
+
+/*Раздел "about me" Ver.мобилки*/
+.about_me_p p {
+    font-family: gilroy-medium;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    padding-bottom: 2em;
+}
+.about_me_p p:last-child {
+    padding-bottom: 0;
+}
+/*end Ver.мобилки*/
+
+/*Раздел skills Ver.мобилки*/
+.skills p {
+    padding-bottom: 71px;
+    font-family: gilroy-medium;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+}
+.conteiner_skills {
+    display: flex;
+    flex-direction: column;
+}
+.conteiner_skills div:last-child {
+    padding-bottom: 0;
+}
+.conteiner_skills_item p {
+    font-family: gilroy-bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    padding: 23px 0px 40px 0px ;
+}
+/*end*/
+
+/*Раздел portfolio Ver.мобилки*/
+.portfolio h2 {
+    margin-bottom: 65px;
+}
+.portfolio a {
+    font-family: gilroy-medium;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
+.portfolio_img img {    
+    width: 100%;
+    margin-bottom: 35px;
+}
+.portfolio .list_item:last-child{
+    padding-bottom: 0;
+}
+/*end*/
+        /*end main*/
+
+        /*Стилизация подвала сайта Ver.мобилки*/
+
+/* Раздел contacts Ver.мобилки */
+.contacts p {
+    font-family: gilroy-medium;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #090909;
+    padding-bottom: 40px;
+    margin: 0;
+}
+.contacts p:last-child {
+    color: #828282;
+}
+.contacts button {
+    background: #000000;
+    border-radius: 50px;
+    font-family: gilroy-bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 97px;
+}
+.contacts_social_icon {
+    width: 100%;
+    margin-top: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 48px;
+}
+/*end*/
+        /*end footer*/
+
+
+        /*carry-over version of the mobile*/
+@media screen and (max-width: 950px) {
+    .language_change {
+        display: none;
+    }
+    .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .nav_list_ul a {
+        font-family: Gilroy-Bold;
+        font-size: 34px;
+        line-height: 42px;
+        color: #828282;
+        text-decoration: none;
+    }
+    .nav_list_ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+    }
+    .nav_list_ul li {
+        margin-bottom: 67px;
+    }
+    .nav_list_ul li:last-child {
+        margin-bottom: 0;
+    }
+}
+        /*end*/
+
+
+        /*dekstop version*/
+@media screen and (min-width: 950px) {
+    header {  
+        display: flex;
+        justify-content: center;
+    }
+    .nav {
+        width: 940px;
+        border-bottom: 1px solid rgba(130, 130, 130, 0.5);
+    }
+    .nav_list_ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 33px 0 31.92px 0;
+        margin: 0;
+    }
+    .nav_list_ul li a {
+        font-family: Gilroy-Bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #828282;
+        text-decoration: none;
+    }
+    .nav_list_ul li  {
+        list-style-type: none;
+    }
+    .nav_list_ul li:first-child a {
+        color: black;
+    }
+
+
+    .main_cover {
+        padding-top: 36px;
+        padding-bottom: 113px;
+    }
+    .main_cover_items {
+        align-items: flex-end;
+        justify-content: space-between;
+        min-width: 940px;
+    }
+    .main_cover_items_img img {
+        display: none;
+    }
+    .main_cover_items_text {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .main_cover_items h1 {
+        margin: 0;
+    }
+    .main_cover_items p {
+        padding-left: 308px;
+    }
+    .main_cover_items_img {
+        width: 100%;
+        background-image: url("img/main_img_dekstop.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        min-height: 388px;
+    }
+    .main_cover_items button {
+        display: none;
+    }
+    .language_change {
+    transform: rotate(-90deg);
+    padding-top: 40px;
+    }
+    .language_change a {
+        font-family: Gilroy-Bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #828282;
+        text-decoration: none;
+        border-right: 2px solid #000;
+    }
+    .language_change a:last-child {
+        border: 0;
+        margin-left: 2px;
+        color: #000;}
+
+
+
+    .about_me {
+        padding-bottom: 116px;
+        padding-top: 111px;
+    }
+    .about_me_p {
+        max-width: 503px;
+    }
+    .about_me_p p:last-child {
+        margin-left: 50px;
+        margin-right: 50px;}
+    
+
+
+
+    .conteiner_skills {
+        flex-direction: row;
+        min-width: 940px;
+        justify-content: space-between;}
+    
+    
+    
+    .portfolio {
+        padding: 112px 0 96px 0;
+    }
+    .portfolio h2 {
+        margin-bottom: 47px;
+    }
+    .portfolio_img img {
+        margin-bottom: 0;
+    }
+    .portfolio_description {
+        padding-bottom: 99px;
+        padding-top: 44px;
+    }
+    .portfolio .list_item:last-child .portfolio_description {
+        padding-bottom: 0;}
+
+
+
+
+    .contacts {
+        padding-top: 114px;
+        padding-bottom: 123px;
+    }
+    .close {
+        display: none;
+    }
+    
+    
+    
+    
+    .contacts_social_icon {
+        justify-content: space-between;
+        max-width: 342px;
+    }
+    .contacts button {
+        padding: 7px 18px;
+    }
+    .contacts p:last-child {
+        font-size: 14px;
+        line-height: 17px;
+        padding-bottom: 0;}
+    
+
+    .list_item {
+        padding-bottom: 0;}
+    
+    
+}
+
+
+@font-face {
+    font-family: gilroy-bold;
+    src: url("./fonts/gilroy/gilroy-bold.woff") format("woff"),
+        url("./fonts/gilroy/gilroy-bold.ttf") format("ttf");
+}
+@font-face {
+    font-family: gilroy-medium;
+    src: url("./fonts/gilroy/gilroy-medium.woff") format("woff"),
+        url("./fonts/gilroy/gilroy-medium.ttf") format("ttf");
+}
